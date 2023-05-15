@@ -1,23 +1,25 @@
 :root {
-    --primario: #9c27b0;
-    --primarioOscuro: #891190;
-    --secundario: #FFCE00;
-    --secundarioOscuro: rgb(233,287,2);
-    --blanco: #fff;
-    --negro: #000;
-    --rojo: #e60000;
-    --fuentePrincipal:'Staatliches', cursive;
+  --primario: #9c27b0;
+  --primarioOscuro: #891190;
+  --secundario: #FFCE00;
+  --secundarioOscuro: rgb(233, 287, 2);
+  --blanco: #fff;
+  --negro: #000;
+  --rojo: #e60000;
+  --fuentePrincipal: 'Staatliches', cursive;
 }
 
 
 html {
-    box-sizing: border-box;
-    font-size: 62.5%;
-    scroll-snap-type: y mandatory;
+  box-sizing: border-box;
+  font-size: 62.5%;
+  scroll-snap-type: y mandatory;
 }
 
-*, * ::before, *::after {
-    box-sizing: inherit;
+*,
+* ::before,
+*::after {
+  box-sizing: inherit;
 }
 
 /** Globales */
@@ -25,10 +27,10 @@ html {
 
 
 body {
-    font-family: 'Montserrat', sans-serif;
-    background-color: var(--blanco);
-    font-size: 1.6rem;
-    line-height: 1.5;
+  font-family: 'Montserrat', sans-serif;
+  background-color: var(--blanco);
+  font-size: 1.6rem;
+  line-height: 1.5;
 }
 
 /* Basic styling */
@@ -42,196 +44,270 @@ body {
 }
 
 /* 1 */
-*{
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-	font-family:'Montserrat', sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
 
 }
 
 
 header {
-    background-color: var(--blanco);
-    padding: 4px;
-    margin: 0 32rem;
-    color: white;
-    margin-bottom: center;
-    text-align: center;
+  background-color: var(--blanco);
+  padding: 4px;
+  margin: 0 32rem;
+  color: white;
+  margin-bottom: center;
+  text-align: center;
 }
 
 .header__logo {
-    margin: 2rem 0;
-    max-width: 120px;
+  margin: 2rem 0;
+  max-width: 120px;
 }
 
 h1 {
-    font-size: 36px;
-    margin: 0;
+  font-size: 36px;
+  margin: 0;
 }
 
 nav {
-    background-color: var(--rojo);
-    padding: 10px;
-    text-align: center;
-    margin-bottom: 20px;
+  background-color: var(--rojo);
+  padding: 3px;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 nav a {
-    color: white;
-    text-decoration: none;
-    padding: 10px;
+  color: white;
+  text-decoration: none;
+  padding: 10px;
 }
 
 nav a:hover {
-    background-color: white;
-    color: var(--rojo);
-    border-radius: 5px;
+  background-color: white;
+  color: var(--rojo);
+  border-radius: 5px;
 }
 
 .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
+/* Estilos para el contenido principal 
+main {
+  padding: 20px;
+}
+*/
+/* Estilos para cada sección */
 .section {
-    padding: 20px;
-    margin-bottom: 20px;
-    background-color: white;
-    box-shadow: 0px 0px 5px #ccc;
+  padding: 20px;
+  margin-bottom: 20px;
+  background-color: white;
+  box-shadow: 0px 0px 5px #ccc;
 }
 
 h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
-    color: var(--rojo);
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: var(--rojo);
 }
 
 p {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 li {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 footer {
-    background-color: var(--rojo);
-    padding: 20px;
-    color: white;
-    text-align: cabeidcenter;
+  background-color: var(--rojo);
+  padding: 20px;
+  color: white;
+  text-align: cabeidcenter;
 }
 
 
 
 .cabe1 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    width: 79%;
-    margin: 0 auto;
-    z-index: 99;
-    position: relative;
-     border-bottom: 1px solid #ffffff4d;
-  }
-  
-  .fondo {
-    background: var(--rojo);
-    z-index: 99;
-    position: relative;
-  }
-  .redesid {
-    padding: 5px;
-    font-size: 20px;
-    color: #fff;
-  }
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 79%;
+  margin: 0 auto;
+  z-index: 99;
+  position: relative;
+  border-bottom: 1px solid #ffffff4d;
+}
 
-  
+.fondo {
+  background: var(--rojo);
+  z-index: 99;
+  position: relative;
+}
 
-  i.fab.fa-linkedin-in {
-    font-size: 20px;
-    color: var(--blanco); /* Color azul de LinkedIn */
-    margin: 0 0.5rem;
-  }
+.redesid {
+  padding: 5px;
+  font-size: 20px;
+  color: #fff;
+}
 
-  i.fab.fa-twitter  {
-    font-size: 20px;
-    color: var(--blanco); /* Color azul de Twitter */
-    margin: 0 0.5rem;
-  }
 
-  i.fab.fa-facebook {
-    font-size: 20px;
-    color: var(--blanco); /* Color azul de Facebook */
-    margin: 0 0.5rem;
-  }
+
+i.fab.fa-linkedin-in {
+  font-size: 20px;
+  color: var(--blanco);
+  /* Color azul de LinkedIn */
+  margin: 0 0.5rem;
+}
+
+i.fab.fa-twitter {
+  font-size: 20px;
+  color: var(--blanco);
+  /* Color azul de Twitter */
+  margin: 0 0.5rem;
+}
+
+i.fab.fa-facebook {
+  font-size: 20px;
+  color: var(--blanco);
+  /* Color azul de Facebook */
+  margin: 0 0.5rem;
+}
 
 
 /* Agregue este estilo para el contenedor de los botones */
 .button-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  /* Agregue este estilo para personalizar los botones */
-  .btn {
-    background-color: var(--rojo); /* Color verde */
-    color: white;
-    padding: 12px 16px;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-    margin: 5px;
-  }
-  
-  /* Agregue este estilo para personalizar los botones desplegables */
-  .dropdown {
-    position: relative;
-    display: inline-block;
-  }
-  
-  /* Agregue este estilo para personalizar el botón desplegable */
-  .dropbtn {
-    background-color: var(--rojo); /* Color verde */
-    color: white;
-    padding: 12px 16px;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-    margin: 5px;
-  }
-  
-  /* Agregue este estilo para personalizar el menú desplegable */
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    z-index: 1;
-  }
-  
-  .dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-  }
-  
-  /* Agregue este estilo para mostrar el menú desplegable al pasar el cursor sobre el botón */
-  .dropdown:hover .dropdown-content {
-    display: block;
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Agregue este estilo para personalizar los botones */
+.btn {
+  background-color: var(--rojo);
+  /* Color verde */
+  color: white;
+  padding: 12px 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  margin: 5px;
+}
+
+/* Agregue este estilo para personalizar los botones desplegables */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Agregue este estilo para personalizar el botón desplegable */
+.dropbtn {
+  background-color: var(--rojo);
+  /* Color verde */
+  color: white;
+  padding: 8px 8px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  margin: 5px;
+}
+
+/* Agregue este estilo para personalizar el menú desplegable */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 8px 8px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Agregue este estilo para mostrar el menú desplegable al pasar el cursor sobre el botón */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+#aboutHL7 {
+  background-color: #f2f2f2;
+}
+
+#photo-portada {
+  background-color: #f2f2f2;
+}
+
+#introduction {
+  background-color: #f2f2f2;
+}
+
+#standards {
+  background-color: white;
+}
+
+#use-cases {
+  background-color: #f2f2f2;
+}
+
+#resources {
+  background-color: white;
+}
+
+#events {
+  background-color: #f2f2f2;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.columna {
+  flex-basis: 33.33%;
+}
+
+/* Estilos para cada sección */
+.redes-sociales a {
+  display: inline-block;
+
+  height: 20px;
+  margin-right: 10px;
+  color: white;
+  font-size: 16px;
+}
+
+/* Estilos específicos para cada ícono */
 
 
+.direccion,
+.mapa {
+  margin-bottom: 20px;
+}
 
+.derechos-autor {
+  margin-bottom: 20px;
+  bottom: 0;
+  width: 100%;
+  padding: 0px;
+  text-align: center;
+}
 
-
-
-
-    
-    
+.section-imagen {
+  height: 500px;
+  overflow: hidden;
+  width: 100%;
+}
